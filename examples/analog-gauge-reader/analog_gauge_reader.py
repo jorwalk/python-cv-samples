@@ -197,7 +197,8 @@ def get_current_value(img, min_angle, max_angle, min_value, max_value, x, y, r, 
     return new_value
 
 def main():
-    gauge_number = 1
+    # gauge_number = 1
+    gauge_number = input('Enter the gauge number: ')
     file_type='jpg'
     # name the calibration image of your gauge 'gauge-#.jpg', for example 'gauge-5.jpg'.  It's written this way so you can easily try multiple images
     min_angle, max_angle, min_value, max_value, units, x, y, r = calibrate_gauge(gauge_number, file_type)
